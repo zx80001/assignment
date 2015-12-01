@@ -100,7 +100,7 @@ app.get('/:attrib1/:attrib_value1/:attrib2/:attrib_value2', function(req,res) {
 	getRequest(res,criteria);
 });*/
 
-/*app.get('/:coord/:attrib_value1/:attrib_value2', function(req,res) {
+app.get('/:coord/:attrib_value1/:attrib_value2', function(req,res) {
 	console.log("find coord with two value")
 	var criteria = {};
 	//var criteria = "{coord:{$in:["+req.params.attrib_value1+","+req.params.value2+"]}}";
@@ -109,7 +109,7 @@ app.get('/:attrib1/:attrib_value1/:attrib2/:attrib_value2', function(req,res) {
 	criteria["address."+req.params.coord]= req.params.attrib_value1;
 	criteria["address."+req.params.coord] = req.params.attrib_value2;
 	getRequest(res,criteria);
-});*/
+});
 
 /*app.get('/:score/:attrib/:value', function(req,res){
 	console.log("find score");
